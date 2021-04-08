@@ -18,7 +18,7 @@ def details(index):
     top = Toplevel()
     top.title("Detail " + hunians[index].get_jenis())
 
-    d_frame = LabelFrame(top, text="Data Residen", padx=10, pady=10)
+    d_frame = LabelFrame(top, text="Data Residen", padx=10, pady=10, bg="Light Blue")
     d_frame.pack(padx=10, pady=10)
     
     if hunians[index].get_jenis() == "Indekos":
@@ -33,10 +33,10 @@ def about():
     top = Toplevel()
     top.title("About")
 
-    d_frame = LabelFrame(top, text="About", padx=10, pady=10)
+    d_frame = LabelFrame(top, text="About", padx=10, pady=10, bg="Light Grey")
     d_frame.pack(padx=10, pady=10)
 
-    d_summary = Label(d_frame, text="Hunians\n\n" + "Aplikasi Pendataan Hunian Sewaan\n", anchor="w").grid(row=0, column=0, sticky="w")
+    d_summary = Label(d_frame, text="Hunians\n\n" + "Aplikasi Pendataan Hunian Sewaan\n", anchor="w", bg="Light Grey").grid(row=0, column=0, sticky="w")
 
 def add_data():
     top = Toplevel()
